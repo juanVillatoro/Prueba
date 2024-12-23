@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <nav class="bg-[#006400] p-4 text-white">
+        <div class="container mx-auto flex justify-center items-center">
+            <h1 class="text-3xl font-bold">¡Te lo traigo!</h1>
+        </div>
+    </nav>
+
+    <div class="flex w-full justify-center items-center gap-4 my-8 px-4">
+        <div class="w-full">
+            <h1 class="flex justify-center text-2xl font-bold">Agregar nueva Cotización</h1>
+            <form class="w-1/2 mx-auto mt-10" action="" method="POST">
+                <label class="block mb-2 text-sm font-medium text-gray-900" for="price">Peso del producto:</label>
+                <input
+                    class="bg-gray-50 border border-blue-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    type="number" id="price" name="price" step="0.01" required><br><br>
+
+                <label class="block mb-2 text-sm font-medium text-gray-900" for="price">Costo del producto:</label>
+                <input
+                    class="bg-gray-50 border border-blue-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    type="number" id="price" name="price" step="0.01" required><br><br>
+
+                <label class="block mb-2 text-sm font-medium text-gray-900" for="category_id">Tipo de producto:</label>
+                <select class="text-sm font-medium text-gray-900 w-1/3 h-auto" name="category_id" id="category_id"
+                    required>
+                    <option value="1">Computadoras
+                    </option>
+                    <option value="1">Ropa
+                    </option>
+                    <option value="1">Vehículos
+                    </option>
+                </select><br><br>
+
+                <button
+                    class="flex justify-center w-full m-2 mt-4 bg-blue-400 font-bold text-blue-900 px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 text-center inline-block"
+                    type="submit" href="/Backend/webapp/views/HomePageQuotes.html">Create Product</button>
+            </form>
+            <a class="flex justify-center w-full m-2 mt-4 bg-red-400 font-bold text-red-900 px-4 py-2 rounded-lg hover:bg-red-500 transition duration-300 text-center inline-block"
+                href="/Prueba Técnica/Backend/webapp/views/HomePageQuotes.html">Back to Products List</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
